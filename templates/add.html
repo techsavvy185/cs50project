@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Add Entry
+{% endblock %}
+
+{% block body %}
+<h1 style='text-align: center'>Add to Directory</h1>
+<style>
+    .login-form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+<form action="/add" method="post" class='login-form'>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" required><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br>
+    <input type="submit" value="Add">
+</form>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    WELCOME
+{% endblock %}
+
+{% block body %}
+
+    <h1 style='text-align:center'>Telephone Directory</h1>
+    <style>
+        table {
+          border-collapse: collapse;
+          margin: 40px;
+        }
+        td, th {
+          padding: 40px;
+        }
+      </style>
+    <table class='table table-bordered table-hover centered'>
+        <thead class='thead-dark'>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.phone_number }}</td>
+                <td>{{ row.address }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
