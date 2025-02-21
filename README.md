@@ -2,7 +2,7 @@ TELEPHONE DIRECTORY
 
 Video Demo:
 
-Watch here
+[Watch here](https://www.youtube.com/watch?v=RHKx3o0N2ac)
 
 Description
 
